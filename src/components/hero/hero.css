@@ -1,0 +1,35 @@
+:root {
+    --backgroundColor: #212529;
+    --textColor: #EDEDF4;
+    --lightTextColor: #F1F0CC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex: 2;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.description {
+    color: var(--textColor);
+}
+
+.description h1 {
+    font-size: 34px;
+}
+
+.description h3 {
+    font-size: 15px;
+    padding: 30px 0;
+    color: var(--lightTextColor);
+}

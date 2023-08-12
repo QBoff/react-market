@@ -1,0 +1,23 @@
+:root {
+    --backgroundColor: #212529;
+    --textColor: #EDEDF4;
+    --lightTextColor: #F1F0CC;
+}
+
+.popular-card {
+    background-color: var(--backgroundColor);
+    text-align: center;
+}
+
+h3 {
+    color: var(--textColor);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.popular-nft-cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}

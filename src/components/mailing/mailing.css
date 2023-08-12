@@ -1,0 +1,25 @@
+:root {
+    --backgroundColor: #212529;
+    --textColor: #EDEDF4;
+    --lightTextColor: #F1F0CC;
+}
+
+.mailing {
+    padding-top: 50px;
+    display: flex;
+    flex: 2 1;
+    background-color: var(--backgroundColor);
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.sending-block form {
+    display: flex;
+    /* margin-left: 50; */
+}
+
+.sending-block form input {
+    width: 400px;
+    padding: 0 10px;
+}

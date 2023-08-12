@@ -1,0 +1,50 @@
+:root {
+    --backgroundColor: #212529;
+    --textColor: #EDEDF4;
+    --lightTextColor: #F1F0CC;
+}
+
+
+.filter {
+    width: 300px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter p {
+    color: var(--textColor);
+    font-size: 20px;
+    text-align: center;
+}
+
+.filter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.filter form .fields {
+    margin-bottom: 14px;
+}
+
+.filter form span {
+    padding: 0 10px;
+} 
+
+.filter form div {
+    display: flex;
+    justify-content: center;
+}
+
+.filter form div .field {
+    color: var(--lightTextColor);
+    width: 75px;
+    background-color: #212529;
+    box-shadow: none;
+    border: 1px solid #212529;
+    border-radius: 10px;
+    padding: 5px 20px;
+}

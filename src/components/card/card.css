@@ -1,0 +1,31 @@
+:root {
+    --backgroundColor: #212529;
+    --textColor: #EDEDF4;
+    --lightTextColor: #F1F0CC;
+}
+
+.container {
+    width: min-content;
+    background-color: var(--backgroundColor);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5 {
+    color: var(--textColor);
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+p {
+    color: var(--textColor);
+    font-size: 15px;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}

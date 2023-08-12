@@ -1,0 +1,71 @@
+:root {
+    --navbarBackColor: #221e1f;
+    --navbarNavigationColor: #EDEDF4;
+    --navbarNavigationHoverActiveColor: #F1F0CC;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbarBackColor);
+    height: 70px;
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-container {
+    align-items: center;
+}
+
+
+.nav-container div .registration {
+    margin-right: 40px;
+}
+
+.nav-container div .registration li {
+    padding: 10px 20px;
+    border: 3px solid #1dd73caf;
+    border-radius: 5px;
+}
+
+.nav-container div .registration li:hover {
+    background-color: #1dd73caf;
+    transition: 0.35s;
+    color: var(--navbarNavigationHoverActiveColor);
+}
+
+.nav-container .navigation li:first-child {
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+.nav-container .navigation li:not(:first-child) a {
+    font-size: 19px;
+    color: var(--navbarNavigationColor);
+    margin: 0 10px;
+}
+
+.nav-container .navigation li:not(:first-child) a:hover {
+    color: var(--navbarNavigationHoverActiveColor);
+}
+
+.nav-container .navigation li:not(:first-child) a:focus {
+    color: var(--navbarNavigationHoverActiveColor);
+}
+
+.nav-container div .registration li a {
+    color: var(--navbarNavigationColor);
+}
