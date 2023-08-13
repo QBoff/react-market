@@ -1,0 +1,24 @@
+:root {
+    --backgroundColor: #212529;
+    --textColor: #EDEDF4;
+    --lightTextColor: #F1F0CC;
+}
+.market {
+    padding-left: 70px;
+    min-height: calc(100vh - 70px);
+    padding-top: 50px;
+    background-color: var(--backgroundColor);
+    gap: 5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.container {
+    height: max-content;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

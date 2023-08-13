@@ -9,7 +9,7 @@ const Card = ({ image, title, description }) => {
         <>
             <div className="container">
                 <div className="img">
-                    <img src={image} alt="NFT Img" width='300px' />
+                    <img src={image} alt="NFT Img" width='200px' />
                 </div>
                 <h5>{title}</h5>
                 <p>{description}</p>

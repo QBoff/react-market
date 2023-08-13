@@ -1,12 +1,11 @@
 import React from "react";
 
-import Filter from './filter/filter';
+import Wrapper from './market_wrapper/wrapper';
 
 const Market = () => {
     return (
         <>
-            <h1>Market</h1>
-            <Filter />
+            <Wrapper />
         </>
     );
 };
