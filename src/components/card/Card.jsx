@@ -4,7 +4,7 @@ import './card.css';
 import Button from "../button/Button";
 
 
-const Card = ({ image, title, description }) => {
+const Card = ({ image, title, description, cost }) => {
     return (
         <>
             <div className="container">
@@ -14,7 +14,7 @@ const Card = ({ image, title, description }) => {
                 <h5>{title}</h5>
                 <p>{description}</p>
                 <div className="buy">
-                    <Button toLink='#' title='Buy' />
+                    <Button toLink='#' title='Buy' cost={cost} />
                 </div>
 
             </div>

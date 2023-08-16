@@ -16,7 +16,7 @@ const Wrapper = () => {
         <>
             <section className="market">
                 <div className="filter">
-                    <Filter />
+                    <Filter images={Images} setImages={setImages} />
                 </div>
                 <div className="container">
                     <Searchbar setImages={setImages} images={Images}/>
@@ -25,7 +25,7 @@ const Wrapper = () => {
                             image => {
                                 return (
                                 <div>
-                                    <Card image={image.image} title={image.title} />
+                                    <Card image={image.image} title={image.title} cost={image.cost} />
                                 </div>);
                             }
                         )}

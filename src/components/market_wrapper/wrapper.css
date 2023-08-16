@@ -4,17 +4,18 @@
     --lightTextColor: #F1F0CC;
 }
 .market {
-    padding-left: 70px;
     min-height: calc(100vh - 70px);
     padding-top: 50px;
+    padding-left: 10%;
     background-color: var(--backgroundColor);
-    gap: 5rem;
     display: flex;
-    justify-content: flex-start;
+    gap: 3rem;
+    justify-content: start;
+    align-items: start;
 }
-.container {
+/* .container {
     height: max-content;
-}
+} */
 
 .cards {
     margin-top: 30px;

@@ -2,6 +2,8 @@
     border: 2px solid #1dd73caf;
     border-radius: 7px;
     width: fit-content;
+    display: flex;
+    gap: 2rem;
     padding: 10px 20px;
 }
 

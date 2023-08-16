@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 
 import './searchbar.css';
-import Button from "../button/Button";
 
 
 const Searchbar = ({ images, setImages }) => {
@@ -19,7 +18,6 @@ const Searchbar = ({ images, setImages }) => {
                         setImages(images.filter(image => image.title.indexOf(e.target.value) !== -1 || e.target.value === ''))
                         return setSearch(e.target.value)
                     }} />
-                <Button title="Search" />
             </div>
         </>
     );

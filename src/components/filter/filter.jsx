@@ -1,26 +1,63 @@
 import React from "react";
 import Button from '../button/Button';
+import { useState } from "react";
 
 import './filter.css';
 
-const Filter = () => {
+const Filter = ({ setImages, images }) => {
+
+    const [minValue, setMinValue] = useState('');
+    const [maxValue, setMaxValue] = useState('');
+
     return (
         <>
             <section className="filter">
                 <p>Filter</p>
                 <p className="new-block">Set cost</p>
-                <form action="" method="post">
+                <div className="form">
                     <div className="fields">
-                        <input className="field" type="text" placeholder="min" name="min" />
+                        <input className="field"
+                            type="text"
+                            placeholder="min"
+                            name="min"
+                            value={minValue}
+                            onChange={
+                                (e) => setMinValue(e.target.value)
+                            } />
                         <span>—</span>
-                        <input className="field" type="text" placeholder="max" name="max" />
+                        <input className="field"
+                            type="text"
+                            placeholder="max"
+                            name="max"
+                            value={maxValue}
+                            onChange={(e) => setMaxValue(e.target.value)}
+                        />
                     </div>
-                    <div className="apply-btn">
-                        <Button title="Apply" />
+                    <div>
+                        <Button onClick={() => {
+                            filterImages(images, minValue, maxValue, setImages)
+                        } } title="press" />
                     </div>
-                </form>
+
+                </div>
             </section>
         </>
+    );
+}
+
+function filterImages(images, minCost, maxCost, setImages) {
+    if (minCost === '' || minCost === null || minCost === undefined || parseFloat(minCost) <= 0) {
+        minCost = 0;
+    }
+    if (maxCost === '' || maxCost === null || maxCost === undefined || parseFloat(maxCost) <= 0) {
+        maxCost = 100;
+    }
+    [minCost, maxCost] = [parseFloat(minCost), parseFloat(maxCost)];
+
+    setImages(
+        images.filter(
+            (image) => image.cost >= minCost && image.cost <= maxCost
+        )
     );
 }
 

@@ -26,27 +26,27 @@
 
 }
 
-.filter form {
+.filter .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.filter form .fields {
+.filter .form .fields {
     margin-bottom: 14px;
 }
 
-.filter form span {
+.filter .form span {
     padding: 0 10px;
 } 
 
-.filter form div {
+.filter .form div {
     display: flex;
     justify-content: center;
 }
 
-.filter form div .field {
+.filter .form div .field {
     color: var(--lightTextColor);
     width: 75px;
     background-color: #212529;

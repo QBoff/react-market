@@ -1,15 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './button.css';
 
-const Button = ({ toLink='', title='', type = '' }) => {
+const Button = ({ toLink = '', title = '', type = '', cost = '', onClick = () => {} }) => {
     return (
         <>
             {type !== 'submit' ?
-                <div className="button">
-                    <a href={toLink}>{title}</a>
+                <div className="button" onClick={onClick}>
+                    <div>
+                        <Link to={toLink}>{title}</Link>
+                    </div>
+                    {cost !== '' &&
+                        <div>
+                            <p>{cost} ETH</p>
+                        </div>
+                    }
                 </div>
-                 :
+                :
                 <div>
                     <button type="submit">{title}</button>
                 </div>
