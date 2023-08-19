@@ -20,4 +20,9 @@ h3 {
     display: flex;
     gap: 1.5rem;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 400px;
 }

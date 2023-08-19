@@ -6,7 +6,7 @@
 
 
 .filter {
-    width: 300px;
+    width: fit-content;
     height: fit-content;
     background-color: #083c3c;
     display: flex;
@@ -23,7 +23,6 @@
 
 .filter .new-block {
     margin: 20px 0;
-
 }
 
 .filter .form {
@@ -48,7 +47,7 @@
 
 .filter .form div .field {
     color: var(--lightTextColor);
-    width: 75px;
+    max-width: 40px;
     background-color: #212529;
     box-shadow: none;
     border: 1px solid #212529;

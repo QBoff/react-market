@@ -4,7 +4,7 @@
     width: fit-content;
     display: flex;
     gap: 2rem;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .button a {
@@ -14,7 +14,7 @@ button {
     box-shadow: none;
     background-color: #1dd73caf;
     border: 0px solid #1dd73caf;
-    padding: 10px 20px;
+    padding: 10px 10px;
     width: fit-content;
     color: #EDEDF4;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-import './card.css';
 import Button from "../button/Button";
 
+import './card.css';
 
 const Card = ({ image, title, description, cost }) => {
     return (

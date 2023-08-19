@@ -3,23 +3,73 @@
     --textColor: #EDEDF4;
     --lightTextColor: #F1F0CC;
 }
+
+.box {
+    padding: 0 100px;
+    background-color: var(--backgroundColor)
+}
+
 .market {
     min-height: calc(100vh - 70px);
+    width: 100%;
     padding-top: 50px;
-    padding-left: 10%;
-    background-color: var(--backgroundColor);
     display: flex;
-    gap: 3rem;
-    justify-content: start;
+    justify-self: center;
+    flex-direction: row;
     align-items: start;
+    justify-content: space-between;
+    gap: 3rem;
+    /* align-items: start; */
 }
+
 /* .container {
     height: max-content;
 } */
 
+/* .filter {
+    flex: 1;
+} */
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    align-self: self-start;
+}
+
+
+
 .cards {
     margin-top: 30px;
     display: flex;
+    max-width: 100%;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .market {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter {
+        justify-self: center;
+    }
+
+    .container {
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

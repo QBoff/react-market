@@ -5,12 +5,16 @@
 }
 
 .container {
-    width: min-content;
+    width: 100%;
+    /* max-width: 400px; */
     background-color: var(--backgroundColor);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
 }
 
 h5 {
@@ -25,6 +29,7 @@ p {
 }
 
 .buy {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 12px 0;

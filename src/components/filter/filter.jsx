@@ -12,7 +12,6 @@ const Filter = ({ setImages, images }) => {
     return (
         <>
             <section className="filter">
-                <p>Filter</p>
                 <p className="new-block">Set cost</p>
                 <div className="form">
                     <div className="fields">

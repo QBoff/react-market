@@ -1,8 +1,9 @@
 import React from "react";
 
-import './hero.css';
 import heroImage from '../../img/homepage-hero-image.png';
 import Button from "../button/Button";
+
+import './hero.css';
 
 const Hero = () => {
     return (
@@ -11,7 +12,9 @@ const Hero = () => {
                 <div className="description">
                     <h1>New Way of TRADING NFT</h1>
                     <h3>NFT Market Offence is the best way to sell or buy NFT</h3>
-                    <Button toLink='/sign_up' title='Create Account' />
+                    <div className="btn">
+                        <Button toLink='/sign_up' title='Create Account' />
+                    </div>
                 </div>
                 <div className="hero-image">
                     <img src={heroImage} alt="Hero img" height="300px" />
