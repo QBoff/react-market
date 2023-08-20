@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "../card/Card";
+import Card from "../card/card";
 import nft1 from '../../img/wojakians.png';
 import nft2 from '../../img/lords.png';
 import nft3 from '../../img/nakamigos.png';

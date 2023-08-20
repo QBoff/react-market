@@ -1,6 +1,7 @@
 import React from "react";
-import Button from '../button/Button';
 import { useState } from "react";
+
+import Button from "../button/button";
 
 import './filter.css';
 
@@ -35,7 +36,7 @@ const Filter = ({ setImages, images }) => {
                     <div>
                         <Button onClick={() => {
                             filterImages(images, minValue, maxValue, setImages)
-                        } } title="press" />
+                        } } title="Apply" />
                     </div>
 
                 </div>

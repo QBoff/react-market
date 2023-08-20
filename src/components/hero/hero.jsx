@@ -1,7 +1,7 @@
 import React from "react";
 
+import Button from "../button/button";
 import heroImage from '../../img/homepage-hero-image.png';
-import Button from "../button/Button";
 
 import './hero.css';
 

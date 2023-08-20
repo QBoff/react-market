@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Filter from '../filter/filter';
 import Searchbar from '../searchbar/searchbar';
-import Card from '../card/Card';
+import Card from '../card/card';
 import Images from '../../images';
 
 import './wrapper.css';

@@ -1,6 +1,6 @@
-import Hero from "./hero/hero";
-import Popular from "./popular/Popular";
-import Mailing from "./mailing/mailing";
+import Hero from "../components/hero/hero";
+import Popular from "../components/popular/popular";
+import Mailing from "../components/mailing/mailing";
 
 const Home = () => {
     return (

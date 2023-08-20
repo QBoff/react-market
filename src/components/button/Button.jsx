@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import './button.css';
 
-const Button = ({ toLink = '', title = '', type = '', cost = '', onClick = () => {} }) => {
+const Button = ({ toLink = '', title = '', type = '', cost = '', onClick = null }) => {
     return (
         <>
             {type !== 'submit' ?
@@ -18,7 +18,7 @@ const Button = ({ toLink = '', title = '', type = '', cost = '', onClick = () =>
                     }
                 </div>
                 :
-                <div>
+                <div className="submit">
                     <button type="submit">{title}</button>
                 </div>
             }
