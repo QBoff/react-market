@@ -6,7 +6,6 @@ import logo from '../../img/logo-short.png';
 
 import './navbar.css';
 
-
 const Navbar = () => {
     return (
         <>
